@@ -1,3 +1,5 @@
+import { SITE_URL } from "@/lib/site";
+
 // Legal identity used across the policy pages and the footer.
 // Fill in the bracketed placeholders before going live — UK law (Companies Act 2006,
 // E-Commerce Regulations 2002) and Google Merchant/Ads policies require them to be accurate.
@@ -11,7 +13,7 @@ export const company = {
   registeredOffice: "[Registered office address], London, United Kingdom",
   email: "support@vortexuk.co.uk",
   phone: "[Customer service phone number]",
-  website: "https://vortex-uk.vercel.app",
+  website: SITE_URL,
   serviceHours: "Monday to Friday, 9am to 5pm (UK time)",
   lastUpdated: "11 September 2026",
 };

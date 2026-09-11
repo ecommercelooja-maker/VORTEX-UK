@@ -1,7 +1,7 @@
 import type { MetadataRoute } from "next";
 import { policyLinks } from "@/data/company";
 
-const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL ?? "https://vortex-uk.vercel.app";
+import { SITE_URL } from "@/lib/site";
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const now = new Date();

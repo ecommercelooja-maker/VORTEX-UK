@@ -6,7 +6,7 @@ import CookieBanner from "@/components/CookieBanner";
 const figtree = Figtree({ variable: "--font-figtree", subsets: ["latin"] });
 const bebas = Bebas_Neue({ variable: "--font-bebas", subsets: ["latin"], weight: "400" });
 
-const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL ?? "https://vortex-uk.vercel.app";
+import { SITE_URL } from "@/lib/site";
 
 export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),
