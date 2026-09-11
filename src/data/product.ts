@@ -60,16 +60,7 @@ export const reviewSummary = {
 
 export const footer = {
   serviceTitle: "CUSTOMER SERVICE",
-  address: "Vortex UK · London, United Kingdom",
-  email: "support@vortexuk.co.uk",
   policiesTitle: "POLICIES",
-  policies: [
-    "Legal notice",
-    "Privacy policy",
-    "Refund policy",
-    "Shipping policy",
-    "Terms of service",
-  ],
   newsletterTitle: "Subscribe to our newsletter",
   newsletterText: "Get exclusive offers, news and special discounts straight to your inbox.",
   paymentTitle: "Payment methods",

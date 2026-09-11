@@ -37,3 +37,18 @@ body {
 .btn-gradient:hover {
   background: #178a26;
 }
+
+/* Policy pages */
+.policy h2 { font-family: var(--font-bebas), sans-serif; letter-spacing: 0.04rem; font-size: 1.75rem; margin-top: 2rem; margin-bottom: 0.5rem; }
+.policy h3 { font-weight: 700; font-size: 1.05rem; margin-top: 1.25rem; margin-bottom: 0.4rem; }
+.policy p { margin: 0.6rem 0; line-height: 1.65; color: rgba(0,0,0,0.8); font-size: 0.95rem; }
+.policy ul, .policy ol { margin: 0.6rem 0 0.6rem 1.4rem; line-height: 1.65; font-size: 0.95rem; color: rgba(0,0,0,0.8); }
+.policy ul { list-style: disc; }
+.policy ol { list-style: decimal; }
+.policy li { margin: 0.3rem 0; }
+.policy a { text-decoration: underline; text-underline-offset: 3px; }
+.policy a:hover { color: var(--accent-dark); }
+.policy table { width: 100%; border-collapse: collapse; margin: 1rem 0; font-size: 0.875rem; display: block; overflow-x: auto; }
+.policy th, .policy td { border: 1px solid rgba(0,0,0,0.12); padding: 0.5rem 0.65rem; text-align: left; vertical-align: top; }
+.policy th { background: var(--surface); font-weight: 700; }
+.policy pre { background: var(--surface); border-radius: 0.75rem; padding: 1rem; font-size: 0.8rem; white-space: pre-wrap; margin: 0.75rem 0; }
