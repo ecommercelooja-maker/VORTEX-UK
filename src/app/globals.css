@@ -1,0 +1,39 @@
+@import "tailwindcss";
+
+:root {
+  --background: #ffffff;
+  --foreground: #000000;
+  --accent: #a8c416;
+  --accent-dark: #32a820;
+  --surface: #f3f3f3;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-accent: var(--accent);
+  --color-accent-dark: var(--accent-dark);
+  --color-surface: var(--surface);
+  --font-sans: var(--font-figtree), sans-serif;
+  --font-heading: var(--font-bebas), sans-serif;
+}
+
+html { scroll-behavior: smooth; }
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-figtree), sans-serif;
+}
+
+.font-heading {
+  font-family: var(--font-bebas), sans-serif;
+  letter-spacing: 0.06rem;
+}
+
+.btn-gradient {
+  background: #1f9d2f;
+}
+.btn-gradient:hover {
+  background: #178a26;
+}
