@@ -18,6 +18,8 @@ export const product = {
     "60-day money-back guarantee",
   ],
   gallery: Array.from({ length: 7 }, (_, i) => `/produto/${String(i + 1).padStart(2, "0")}.jpg`),
+  /** Long description: same 11 artwork panels as the French store, re-lettered in English (public/desc). */
+  descriptionImages: Array.from({ length: 11 }, (_, i) => `/desc/${String(i + 1).padStart(2, "0")}.jpg`),
   guarantees: ["Free UK delivery", "Secure payment", "Limited stock"],
   ctaLabel: "ADD TO BASKET",
   stickyCtaLabel: "BUY NOW",
