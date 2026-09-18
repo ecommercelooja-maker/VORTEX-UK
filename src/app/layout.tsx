@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Bebas_Neue, Figtree } from "next/font/google";
 import "./globals.css";
 import CookieBanner from "@/components/CookieBanner";
+import CrmTracker from "@/components/CrmTracker";
 
 const figtree = Figtree({ variable: "--font-figtree", subsets: ["latin"] });
 const bebas = Bebas_Neue({ variable: "--font-bebas", subsets: ["latin"], weight: "400" });
@@ -28,6 +29,7 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
       <body className="min-h-full flex flex-col">
         {children}
         <CookieBanner />
+        <CrmTracker />
       </body>
     </html>
   );

@@ -50,6 +50,7 @@ export default function BuyBox() {
 
       <a
         id="buy"
+        data-qty={qty}
         href={CHECKOUT_URL}
         rel="noopener"
         className="btn-gradient block w-full rounded-full py-4 text-center text-base font-bold tracking-wide text-white shadow-lg transition"

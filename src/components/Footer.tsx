@@ -3,6 +3,7 @@ import Link from "next/link";
 import { footer } from "@/data/product";
 import { company, policyLinks } from "@/data/company";
 import { PaymentIcon } from "./Icons";
+import NewsletterForm from "./NewsletterForm";
 
 export default function Footer() {
   return (
@@ -35,17 +36,7 @@ export default function Footer() {
         <div>
           <h2 className="font-heading text-2xl">{footer.newsletterTitle}</h2>
           <p className="mt-3 text-white/70">{footer.newsletterText}</p>
-          <form className="mt-4 flex overflow-hidden rounded-full border border-white/30 bg-white" onSubmit={(e) => e.preventDefault()}>
-            <input
-              type="email"
-              placeholder="E-mail"
-              aria-label="E-mail"
-              className="min-w-0 flex-1 bg-transparent px-4 py-2.5 text-black outline-none"
-            />
-            <button type="submit" className="btn-gradient px-5 text-xs font-bold text-white">
-              SUBSCRIBE
-            </button>
-          </form>
+          <NewsletterForm />
           <p className="mt-2 text-xs text-white/50">
             By subscribing you agree to receive marketing e-mails from {company.tradingName}. You can unsubscribe at any time. See our{" "}
             <Link href="/privacy-policy" className="underline hover:text-white">

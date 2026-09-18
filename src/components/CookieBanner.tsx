@@ -1,5 +1,6 @@
 "use client";
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 import { useEffect, useState } from "react";
 
 /*
@@ -43,6 +44,7 @@ function read(): Consent | null {
 }
 
 export default function CookieBanner() {
+  const pathname = usePathname();
   const [open, setOpen] = useState(false);
   const [custom, setCustom] = useState(false);
   const [analytics, setAnalytics] = useState(false);
@@ -79,7 +81,8 @@ export default function CookieBanner() {
     setCustom(false);
   };
 
-  if (!open) return null;
+  // the internal dashboard (/admin) is not a public page: no banner
+  if (!open || pathname?.startsWith("/admin")) return null;
 
   return (
     <div role="dialog" aria-live="polite" aria-label="Cookie preferences" className="fixed inset-x-0 bottom-0 z-50 p-3 sm:p-4">

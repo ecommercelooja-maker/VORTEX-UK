@@ -53,6 +53,12 @@ export default function CookiePolicy() {
             <td>12 months</td>
           </tr>
           <tr>
+            <td>vortex-crm-session</td>
+            <td>{company.tradingName} (local storage)</td>
+            <td>Random basket identifier (no personal data) so we can keep your basket and help you complete an order you started</td>
+            <td>Until you clear your browser storage</td>
+          </tr>
+          <tr>
             <td>__cf_bm, _vercel_*</td>
             <td>Vercel / hosting</td>
             <td>Security, bot protection and load balancing</td>
