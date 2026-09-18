@@ -2,7 +2,7 @@
 // Adapted from the French page vortex-mobilite.com/products/vortex-z10.
 
 /** Checkout link. Used by every buy button (BuyBox, sticky bar, header basket). */
-export const CHECKOUT_URL = "https://pay.vortexemobility.com/c/3fk58dt4jk";
+export const CHECKOUT_URL = "https://pay.vortexemobility.com/c/6mwtymq77c";
 
 export const product = {
   title: "VORTEX Z10 2x2, app-connected electric scooter.",
